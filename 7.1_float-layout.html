@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Float & Align</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.4em;
+      }
+      .container {
+        max-width: 960px; /*will match all screens*/
+        margin: 30px auto; /*all the container will be in middle*/
+        /* 30 px seperate between each box in the container*/
+      }
+      .clr {
+        clear: both; /*we want to clear left and right floats*/
+      }
+      .box {
+        border: 1px solid #333;
+        padding: 20px;
+        margin-bottom:15px ;
+        text-align: center;
+      }
+      #box-1 {
+        background-color: orange;
+      }
+      #box-2 {
+        background-color: green;
+        float: left;
+        width: 30%;
+        height: 400px;
+        text-align: left;
+      }
+      #box-3 {
+        background-color: purple ;
+        float: right;
+        width: 68%;
+        height: 400px;
+        text-align: right;
+      }
+      #box-4 {
+          background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="box-1" class="box">
+        <h3>Header</h3>
+      </div>
+      <div id="box-2" class="box">
+        <h3>Side</h3>
+      </div>
+      <div id="box-3" class="box">
+        <h3>Main</h3>
+      </div>
+      <div class="clr"></div>
+      <div id="box-4" class="box">
+        <h3>Footer</h3>
+      </div>
+    </div>
+  </body>
+</html>

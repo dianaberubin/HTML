@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Positioning</title>
+  <style>
+    body {
+      height: 200px;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      width: 600px;
+      height: 100px;
+      background: #555;
+    }
+
+    .container2 {
+      display: flex;
+      flex-direction:column;
+      width: 600px;
+      height: 600px;
+      background: #333;
+      justify-content:space-around;
+    }
+
+    #box-1 {
+     /* position: relative;*/
+      top: 50px;
+      left: 50px;
+      background: green;
+    }
+    #box-2 {
+     /* position:fixed;*/
+      top: 50px;
+      left: 50px;
+      background: blue;
+    }
+    #box-3 {
+     /* position: absolute;*/
+      top: 50px;
+      left: 50px;
+      background: red;
+    }
+  </style>
+</head>
+<body>
+   <div class="container">
+   <div id="box-1" class="box"></div>
+   <div id="box-2" class="box"></div>
+   <div id="box-3" class="box"></div>
+</div>
+<br>
+<div class="container2">
+    <div id="box-1" class="box"></div>
+    <div id="box-2" class="box"></div>
+    <div id="box-3" class="box"></div>
+ </div>
+</body>
+</html>
